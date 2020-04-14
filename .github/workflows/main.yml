@@ -27,7 +27,7 @@ jobs:
       uses: appleboy/telegram-action@master
       with:
         to: ${{ secrets.cov2_eth }}
-        token: ${{ secrets.1147832231:AAE2BcHMZuA6L7l8ttEeC1ZJT-xJBv1Z_7Y }}
+        token: ${{ secrets.TELEGRAM_TOKEN }}
         message: | 
           Overall statistics
           Country ${{ steps.data.outputs.country }} 
