@@ -26,7 +26,7 @@ jobs:
     - name: send default telegram message
       uses: appleboy/telegram-action@master
       with:
-        to: ${{ secrets.cov2_eth_bot }}
+        to: ${{ secrets.cov2_eth }}
         token: ${{ secrets.1147832231:AAE2BcHMZuA6L7l8ttEeC1ZJT-xJBv1Z_7Y }}
         message: | 
           Overall statistics
