@@ -21,13 +21,13 @@ jobs:
     - uses: actions/checkout@v1
     - uses: ./
       with: 
-        country: 'Brazil'
+        country: 'Ethiopia'
       id: data
     - name: send default telegram message
       uses: appleboy/telegram-action@master
       with:
-        to: ${{ secrets.TELEGRAM_TO }}
-        token: ${{ secrets.TELEGRAM_TOKEN }}
+        to: ${{ secrets.cov2_eth }}
+        token: ${{ secrets.1147832231:AAE2BcHMZuA6L7l8ttEeC1ZJT-xJBv1Z_7Y }}
         message: | 
           Overall statistics
           Country ${{ steps.data.outputs.country }} 
